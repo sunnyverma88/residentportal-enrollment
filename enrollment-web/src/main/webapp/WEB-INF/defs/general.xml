@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/layouts/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+  </definition>
+  <definition name="dashboardTem" template="/WEB-INF/layouts/dashboard.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+  </definition>
+  <definition name="index" extends="common">
+    <put-attribute name="title" value="TECHIEONTHENET BLOG - Java/SQL/ETL/Information-Security Technical Blogs" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+   <definition name="dashboard" extends="dashboardTem">
+    <put-attribute name="title" value="TECHIEONTHENET BLOG - Java/SQL/ETL/Information-Security Technical Blogs" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+  <definition name="category" extends="common">
+    <put-attribute name="title" value="TECHIEONTHENET BLOG - Java/SQL/ETL/Information-Security Technical Blogs" />
+    <put-attribute name="body" value="/WEB-INF/jsps/category.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="category"></put-attribute>
+  </definition>
+  <definition name="search" extends="common">
+    <put-attribute name="title" value="TECHIEONTHENET BLOG - Java/SQL/ETL/Information-Security Technical Blogs" />
+    <put-attribute name="body" value="/WEB-INF/jsps/search.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+   <definition name="users" extends="common">
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsps/users.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="users"></put-attribute>
+  </definition>
+   <definition name="unapproved" extends="common">
+    <put-attribute name="title" value="Unapproved Blogs" />
+    <put-attribute name="body" value="/WEB-INF/jsps/unapproved.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+    <put-attribute name="current" value="unapproved"></put-attribute>
+  </definition>
+   <definition name="blog" extends="common">
+   <put-attribute name="title" value="JAVA CONCEPTS" />
+    <put-attribute name="body" value="/WEB-INF/jsps/blog.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+   <definition name="editblog" extends="common">
+    <put-attribute name="title" value="Blog" />
+    <put-attribute name="body" value="/WEB-INF/jsps/editBlog.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+  <definition name="user-details" extends="common">
+    <put-attribute name="title" value="Users Details" />
+    <put-attribute name="body" value="/WEB-INF/jsps/user-details.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="users"></put-attribute>
+  </definition>
+   <definition name="user-register" extends="common">
+    <put-attribute name="title" value="Users Registartion" />
+    <put-attribute name="body" value="/WEB-INF/jsps/user-register.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="register"></put-attribute>
+  </definition>
+   <definition name="login" extends="common">
+    <put-attribute name="title" value="User Login" />
+    <put-attribute name="body" value="/WEB-INF/jsps/login.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp" />
+    <put-attribute name="current" value="login"></put-attribute>
+  </definition>
+  <definition name="account" extends="common">
+		<put-attribute name="title" value="User account" />
+		<put-attribute name="body" value="/WEB-INF/jsps/user-details.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+	 <definition name="contact" extends="common">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body" value="/WEB-INF/jsps/contact.jsp" />
+		<put-attribute name="current" value="contact" />
+	</definition>
+	<definition name="forgotPwd" extends="common">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body" value="/WEB-INF/jsps/forgotpwd.jsp" />
+		<put-attribute name="current" value="index" />
+	</definition>
+</tiles-definitions>

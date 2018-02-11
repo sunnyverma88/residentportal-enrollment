@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-techie-local</actionName>
+            <displayName>techie-local</displayName>
+            <goals>
+                <goal>jetty:run</goal>
+            </goals>
+            <properties>
+                <spring.profiles.active>"dev"</spring.profiles.active>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-techieonthenet-locL</actionName>
+            <displayName>techieonthenet-locL</displayName>
+            <goals>
+                <goal>jetty:run</goal>
+                <goal>-Dspring.profiles.active="dev"</goal>
+            </goals>
+        </action>
+    </actions>

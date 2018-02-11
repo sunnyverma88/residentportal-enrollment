@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="techieonthenet" path="" reloadable="true">
+<Resource name="jdbc/DHDB"
+          auth="Container"
+          type="javax.sql.DataSource"
+          username="postgres"
+          password="postgres"
+          driverClassName="org.postgresql.Driver"
+          url="jdbc:postgresql://localhost:5433/postgres"
+          maxActive="20"
+          maxIdle="10"
+          validationQuery="Select 1"
+/>
+
+</Context>
