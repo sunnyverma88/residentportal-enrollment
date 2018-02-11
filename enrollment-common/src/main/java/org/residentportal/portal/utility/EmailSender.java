@@ -16,6 +16,8 @@ public class EmailSender{
         static Properties mailServerProperties;
 	static Session getMailSession;
 	static MimeMessage generateMailMessage;
+	private static final String EMAIL_API_KEY="SENDGRID_API_KEY";
+
 
 	public static void sendEmail(String recipientAddress,String subject,String message) throws Exception {
 		// takes input from e-mail form
@@ -57,7 +59,8 @@ public class EmailSender{
 		// if you have 2FA enabled then provide App Specific Password
                 try
                 {
-                transport.connect("smtp.sendgrid.net", "apikey", "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");
+			    String apiKey=System.getenv(EMAIL_API_KEY);
+                transport.connect("smtp.sendgrid.net", "apikey", apiKey);
                 transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
                 transport.close();
             }
